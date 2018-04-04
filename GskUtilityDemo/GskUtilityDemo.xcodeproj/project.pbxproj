@@ -13,6 +13,8 @@
 		6C14DA7020746F470016BEBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C14DA6F20746F470016BEBB /* Assets.xcassets */; };
 		6C14DA7320746F470016BEBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C14DA7120746F470016BEBB /* LaunchScreen.storyboard */; };
 		6C14DA7620746F470016BEBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C14DA7520746F470016BEBB /* main.m */; };
+		6C14DAA7207476CE0016BEBB /* UserPersistService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C14DA94207476CE0016BEBB /* UserPersistService.m */; };
+		6C14DAA8207476CE0016BEBB /* PersistService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C14DA97207476CE0016BEBB /* PersistService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,13 @@
 		6C14DA7220746F470016BEBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C14DA7420746F470016BEBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C14DA7520746F470016BEBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6C14DA93207476CE0016BEBB /* UserPersistService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserPersistService.h; sourceTree = "<group>"; };
+		6C14DA94207476CE0016BEBB /* UserPersistService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserPersistService.m; sourceTree = "<group>"; };
+		6C14DA96207476CE0016BEBB /* GskUtilityDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GskUtilityDefine.h; sourceTree = "<group>"; };
+		6C14DA97207476CE0016BEBB /* PersistService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistService.m; sourceTree = "<group>"; };
+		6C14DA98207476CE0016BEBB /* UtilityHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityHeader.h; sourceTree = "<group>"; };
+		6C14DA99207476CE0016BEBB /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+		6C14DA9A207476CE0016BEBB /* PersistService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistService.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,8 @@
 		6C14DA6520746F470016BEBB /* GskUtilityDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6C14DA92207476CE0016BEBB /* Demo */,
+				6C14DA95207476CE0016BEBB /* Utility */,
 				6C14DA6620746F470016BEBB /* AppDelegate.h */,
 				6C14DA6720746F470016BEBB /* AppDelegate.m */,
 				6C14DA6920746F470016BEBB /* ViewController.h */,
@@ -70,6 +81,27 @@
 			);
 			path = GskUtilityDemo;
 			sourceTree = "<group>";
+		};
+		6C14DA92207476CE0016BEBB /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				6C14DA93207476CE0016BEBB /* UserPersistService.h */,
+				6C14DA94207476CE0016BEBB /* UserPersistService.m */,
+			);
+			path = Demo;
+			sourceTree = SOURCE_ROOT;
+		};
+		6C14DA95207476CE0016BEBB /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6C14DA96207476CE0016BEBB /* GskUtilityDefine.h */,
+				6C14DA97207476CE0016BEBB /* PersistService.m */,
+				6C14DA98207476CE0016BEBB /* UtilityHeader.h */,
+				6C14DA99207476CE0016BEBB /* SynthesizeSingleton.h */,
+				6C14DA9A207476CE0016BEBB /* PersistService.h */,
+			);
+			path = Utility;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -142,7 +174,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C14DAA8207476CE0016BEBB /* PersistService.m in Sources */,
 				6C14DA6B20746F470016BEBB /* ViewController.m in Sources */,
+				6C14DAA7207476CE0016BEBB /* UserPersistService.m in Sources */,
 				6C14DA7620746F470016BEBB /* main.m in Sources */,
 				6C14DA6820746F470016BEBB /* AppDelegate.m in Sources */,
 			);
