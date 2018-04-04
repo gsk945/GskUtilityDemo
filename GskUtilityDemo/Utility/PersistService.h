@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface PersistService : NSObject
+@interface PersistService : NSObject//demo: UserPersistService
 /**
  保存数据
  

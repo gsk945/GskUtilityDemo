@@ -10,8 +10,8 @@
 
 @implementation PersistService
 + (void)saveObject:(id<NSCoding>)obj withKey:(NSString *)key AndClassKey:(NSString*)classKey{
-    if([PersistService getPatchWithPath:classKey]){
-        NSMutableDictionary *newDic = [[NSMutableDictionary alloc]initWithDictionary:[PersistService getPatchWithPath:classKey]];
+    if([PersistService getPathWithKey:classKey]){
+        NSMutableDictionary *newDic = [[NSMutableDictionary alloc]initWithDictionary:[PersistService getPathWithKey:classKey]];
         [newDic setObject:obj forKey:key];
         [PersistService save:newDic withKey:classKey];
     }else{
@@ -21,8 +21,8 @@
     }
 }
 + (void)save:(id)obj withKey:(NSString *)key{
-    NSString *patch = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]stringByAppendingString:@"/doc"];
-    NSMutableDictionary *dic = [[NSMutableDictionary alloc]initWithContentsOfFile:patch];
+    NSString *path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]stringByAppendingString:@"/doc"];
+    NSMutableDictionary *dic = [[NSMutableDictionary alloc]initWithContentsOfFile:path];
     if (dic == nil){
         dic = [[NSMutableDictionary alloc]init];
     }
@@ -31,23 +31,23 @@
     }else{
         [dic setObject:obj forKey:key];
     }
-    if ( [dic writeToFile:patch atomically:YES]){
+    if ( [dic writeToFile:path atomically:YES]){
         NSLog(@"数据写入成功");
     }else{
         NSLog(@"数据写入失败");
     }
 }
 + (id)getDataWithKey:(NSString *)key AndClassKey:(NSString *)classKey{
-    if([PersistService getPatchWithPath:classKey] != nil){
-        NSMutableDictionary *newDic = [[NSMutableDictionary alloc]initWithDictionary:[PersistService getPatchWithPath:classKey]];
+    if([PersistService getPathWithKey:classKey] != nil){
+        NSMutableDictionary *newDic = [[NSMutableDictionary alloc]initWithDictionary:[PersistService getPathWithKey:classKey]];
         return newDic[key];
     }else{
         return nil;
     }
 }
-+ (id)getPatchWithPath:(NSString *)key{
-    NSString *patch = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]stringByAppendingString:@"/doc"];
-    NSDictionary *dic = [[NSDictionary alloc]initWithContentsOfFile:patch];
++ (id)getPathWithKey:(NSString *)key{
+    NSString *path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]stringByAppendingString:@"/doc"];
+    NSDictionary *dic = [[NSDictionary alloc]initWithContentsOfFile:path];
     return [dic objectForKey:key];
 }
 @end
