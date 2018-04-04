@@ -94,11 +94,11 @@
 		6C14DA95207476CE0016BEBB /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				6C14DA96207476CE0016BEBB /* GskUtilityDefine.h */,
-				6C14DA97207476CE0016BEBB /* PersistService.m */,
 				6C14DA98207476CE0016BEBB /* UtilityHeader.h */,
-				6C14DA99207476CE0016BEBB /* SynthesizeSingleton.h */,
+				6C14DA96207476CE0016BEBB /* GskUtilityDefine.h */,
 				6C14DA9A207476CE0016BEBB /* PersistService.h */,
+				6C14DA97207476CE0016BEBB /* PersistService.m */,
+				6C14DA99207476CE0016BEBB /* SynthesizeSingleton.h */,
 			);
 			path = Utility;
 			sourceTree = SOURCE_ROOT;

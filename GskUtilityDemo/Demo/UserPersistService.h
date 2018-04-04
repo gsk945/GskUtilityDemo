@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "UtilityHeader.h"
 
 @interface UserPersistService : NSObject
-
++(void)saveData:(id<NSCoding>)obj withKey:(NSString *)key;
++(NSDictionary *)getUserDataWithKey:(NSString *)key;
++(void)saveArray:(id<NSCoding>)obj withKey:(NSString *)key;
++(NSArray *)getUserDataArrayWithKey:(NSString *)key;
 @end
