@@ -38,9 +38,9 @@
  *  __VA_ARGS__ 表示见面...的参数列表
  */
 #ifdef DEBUG
-#define GSKLog(fmt, ...) NSLog(fmt, __VA_ARGS__)
+# define GSKLog(fmt, ...) NSLog((@"[文件名:%s]\n" "[函数名:%s]\n" "[行号:%d] \n" fmt), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
 #else
-#define GSKLog(fmt, ...)
+# define GSKLog(...);
 #endif
 
 #endif /* GskUtilityDefine_h */
