@@ -9,17 +9,17 @@
 #ifndef GskUtilityDefine_h
 #define GskUtilityDefine_h
 
-#define gskBound [UIScreen mainScreen].bounds//屏幕尺寸
-#define gskHeight [UIScreen mainScreen].bounds.size.height// 屏幕高度
-#define gskWidth [UIScreen mainScreen].bounds.size.width// 屏幕宽度
-#define gskiPhone6W 375.0
-#define gskiPhone6H 667.0
+#define kBound [UIScreen mainScreen].bounds//屏幕尺寸
+#define kHeight [UIScreen mainScreen].bounds.size.height// 屏幕高度
+#define kWidth [UIScreen mainScreen].bounds.size.width// 屏幕宽度
+#define kiPhone6W 375.0
+#define kiPhone6H 667.0
 
 // 计算比例
-#define gskScaleX gskWidth /gskiPhone6W
-#define gskScaleY gskHeight / gskiPhone6H
-#define LineX(l) l*gskScaleX// X坐标
-#define LineY(l) l*gskScaleY// Y坐标
+#define kScaleX kWidth /kiPhone6W
+#define kScaleY kHeight / kiPhone6H
+#define LineX(l) l*kScaleX// X坐标
+#define LineY(l) l*kScaleY// Y坐标
 #define Font(x) [UIFont systemFontOfSize:x]// 字体
 
 #define kStatuHeigh [[UIApplication sharedApplication] statusBarFrame].size.height + self.navigationController.navigationBar.frame.size.height  //状态栏＋导航栏的高度
@@ -32,5 +32,15 @@
 #define RandomColor RGBA(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256),1)
 /** 弱引用 */
 #define kWeakSelf(type)  __weak typeof(type) weak##type = type;
+
+/**
+ *  如果是调试模式，GSKLog就和NSLog一样，如果不是调试模式，GSKLog就什么都不做
+ *  __VA_ARGS__ 表示见面...的参数列表
+ */
+#ifdef DEBUG
+#define GSKLog(fmt, ...) NSLog(fmt, __VA_ARGS__)
+#else
+#define GSKLog(fmt, ...)
+#endif
 
 #endif /* GskUtilityDefine_h */
