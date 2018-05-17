@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "UserPersistService.h"
 @interface ViewController ()
 
 @end
@@ -16,9 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    NSString *str = @"hello";
-    GSKLog(@"%@ world",str);
+    //数据写入
+    NSDictionary *dic = @{@"name":@"gsk",@"age":@26};
+    [UserPersistService saveData:dic withKey:@"me"];
+    //数据读取
+    NSDictionary *meDic = [UserPersistService getUserDataWithKey:@"me"];
+    GSKLog(@"me==%@",meDic);
+    //数据清除
+    [UserPersistService clearDatawithKey:@"me"];
+    NSDictionary *newmeDic = [UserPersistService getUserDataWithKey:@"me"];
+    GSKLog(@"me==%lu", (unsigned long)[newmeDic count]);
 }
 
 

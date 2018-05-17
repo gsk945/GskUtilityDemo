@@ -23,4 +23,7 @@
     NSArray *array = [PersistService getDataWithKey:key AndClassKey:UserData];
     return array;
 }
++(void)clearDatawithKey:(NSString *)key{
+    [PersistService saveObject:@{} withKey:key AndClassKey:UserData];
+}
 @end

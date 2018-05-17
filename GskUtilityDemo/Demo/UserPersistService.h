@@ -14,4 +14,5 @@
 +(NSDictionary *)getUserDataWithKey:(NSString *)key;
 +(void)saveArray:(id<NSCoding>)obj withKey:(NSString *)key;
 +(NSArray *)getUserDataArrayWithKey:(NSString *)key;
++(void)clearDatawithKey:(NSString *)key;
 @end
