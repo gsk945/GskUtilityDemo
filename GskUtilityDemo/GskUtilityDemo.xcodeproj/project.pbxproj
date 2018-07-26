@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A7D7001C81CFE3F89AAEE42 /* libPods-GskUtilityDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DE4845EF0F3FA0EB940DC3 /* libPods-GskUtilityDemo.a */; };
 		6C14DA6820746F470016BEBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C14DA6720746F470016BEBB /* AppDelegate.m */; };
 		6C14DA6B20746F470016BEBB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C14DA6A20746F470016BEBB /* ViewController.m */; };
 		6C14DA6E20746F470016BEBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C14DA6C20746F470016BEBB /* Main.storyboard */; };
@@ -15,10 +16,12 @@
 		6C14DA7620746F470016BEBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C14DA7520746F470016BEBB /* main.m */; };
 		6C14DAA7207476CE0016BEBB /* UserPersistService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C14DA94207476CE0016BEBB /* UserPersistService.m */; };
 		6C14DAA8207476CE0016BEBB /* PersistService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C14DA97207476CE0016BEBB /* PersistService.m */; };
+		6C3E5B0D2109AF9A0016FE13 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3E5B0C2109AF9A0016FE13 /* NetworkManager.m */; };
 		6CF9C5CD20FDD392006873ED /* PersistServiceSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF9C5CC20FDD392006873ED /* PersistServiceSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51B569A13B307F991C107B39 /* Pods-GskUtilityDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GskUtilityDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GskUtilityDemo/Pods-GskUtilityDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6C14DA6320746F470016BEBB /* GskUtilityDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GskUtilityDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C14DA6620746F470016BEBB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6C14DA6720746F470016BEBB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -36,8 +39,12 @@
 		6C14DA98207476CE0016BEBB /* UtilityHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityHeader.h; sourceTree = "<group>"; };
 		6C14DA99207476CE0016BEBB /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
 		6C14DA9A207476CE0016BEBB /* PersistService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistService.h; sourceTree = "<group>"; };
+		6C3E5B0B2109AF9A0016FE13 /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		6C3E5B0C2109AF9A0016FE13 /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		6CF9C5CB20FDD392006873ED /* GskUtilityDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GskUtilityDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		6CF9C5CC20FDD392006873ED /* PersistServiceSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistServiceSwift.swift; sourceTree = "<group>"; };
+		B7DE4845EF0F3FA0EB940DC3 /* libPods-GskUtilityDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GskUtilityDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C062105BFFF6F9969239EBA2 /* Pods-GskUtilityDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GskUtilityDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GskUtilityDemo/Pods-GskUtilityDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A7D7001C81CFE3F89AAEE42 /* libPods-GskUtilityDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +64,8 @@
 			children = (
 				6C14DA6520746F470016BEBB /* GskUtilityDemo */,
 				6C14DA6420746F470016BEBB /* Products */,
+				86BF9F61CE0C51F593C3D65C /* Pods */,
+				78E89413712698C9F69271C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +80,7 @@
 		6C14DA6520746F470016BEBB /* GskUtilityDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6C3E5B0A2109AF690016FE13 /* NetworkManager */,
 				6C14DA92207476CE0016BEBB /* Demo */,
 				6C14DA95207476CE0016BEBB /* Utility */,
 				6C14DA6620746F470016BEBB /* AppDelegate.h */,
@@ -108,6 +119,32 @@
 			path = Utility;
 			sourceTree = SOURCE_ROOT;
 		};
+		6C3E5B0A2109AF690016FE13 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				6C3E5B0B2109AF9A0016FE13 /* NetworkManager.h */,
+				6C3E5B0C2109AF9A0016FE13 /* NetworkManager.m */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		78E89413712698C9F69271C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7DE4845EF0F3FA0EB940DC3 /* libPods-GskUtilityDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86BF9F61CE0C51F593C3D65C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C062105BFFF6F9969239EBA2 /* Pods-GskUtilityDemo.debug.xcconfig */,
+				51B569A13B307F991C107B39 /* Pods-GskUtilityDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,6 +152,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C14DA7920746F470016BEBB /* Build configuration list for PBXNativeTarget "GskUtilityDemo" */;
 			buildPhases = (
+				C9ED55642C670E5176129469 /* [CP] Check Pods Manifest.lock */,
 				6C14DA5F20746F470016BEBB /* Sources */,
 				6C14DA6020746F470016BEBB /* Frameworks */,
 				6C14DA6120746F470016BEBB /* Resources */,
@@ -175,12 +213,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C9ED55642C670E5176129469 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GskUtilityDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6C14DA5F20746F470016BEBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6C14DAA8207476CE0016BEBB /* PersistService.m in Sources */,
+				6C3E5B0D2109AF9A0016FE13 /* NetworkManager.m in Sources */,
 				6C14DA6B20746F470016BEBB /* ViewController.m in Sources */,
 				6CF9C5CD20FDD392006873ED /* PersistServiceSwift.swift in Sources */,
 				6C14DAA7207476CE0016BEBB /* UserPersistService.m in Sources */,
@@ -317,6 +377,7 @@
 		};
 		6C14DA7A20746F470016BEBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C062105BFFF6F9969239EBA2 /* Pods-GskUtilityDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -334,6 +395,7 @@
 		};
 		6C14DA7B20746F470016BEBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51B569A13B307F991C107B39 /* Pods-GskUtilityDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

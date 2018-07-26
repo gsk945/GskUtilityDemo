@@ -32,7 +32,8 @@
 #define RandomColor RGBA(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256),1)
 /** 弱引用 */
 #define kWeakSelf(type)  __weak typeof(type) weak##type = type;
-
+//快速创建字符串
+#define NSStringFormat(format,...) [NSString stringWithFormat:format,##__VA_ARGS__]
 /**
  *  如果是调试模式，GSKLog就和NSLog一样，如果不是调试模式，GSKLog就什么都不做
  *  __VA_ARGS__ 表示见面...的参数列表

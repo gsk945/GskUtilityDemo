@@ -1,0 +1,4 @@
+platform :ios, ‘8.0’
+target 'GskUtilityDemo' do
+pod 'AFNetworking', '~> 3.2.1'
+end
