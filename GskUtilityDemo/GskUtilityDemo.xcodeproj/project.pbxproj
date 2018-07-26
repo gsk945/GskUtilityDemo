@@ -17,6 +17,7 @@
 		6C14DAA7207476CE0016BEBB /* UserPersistService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C14DA94207476CE0016BEBB /* UserPersistService.m */; };
 		6C14DAA8207476CE0016BEBB /* PersistService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C14DA97207476CE0016BEBB /* PersistService.m */; };
 		6C3E5B0D2109AF9A0016FE13 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3E5B0C2109AF9A0016FE13 /* NetworkManager.m */; };
+		6C3E5B102109BD9D0016FE13 /* NetworkingDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3E5B0F2109BD9D0016FE13 /* NetworkingDemo.m */; };
 		6CF9C5CD20FDD392006873ED /* PersistServiceSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF9C5CC20FDD392006873ED /* PersistServiceSwift.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,8 @@
 		6C14DA9A207476CE0016BEBB /* PersistService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistService.h; sourceTree = "<group>"; };
 		6C3E5B0B2109AF9A0016FE13 /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		6C3E5B0C2109AF9A0016FE13 /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		6C3E5B0E2109BD9D0016FE13 /* NetworkingDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkingDemo.h; sourceTree = "<group>"; };
+		6C3E5B0F2109BD9D0016FE13 /* NetworkingDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkingDemo.m; sourceTree = "<group>"; };
 		6CF9C5CB20FDD392006873ED /* GskUtilityDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GskUtilityDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		6CF9C5CC20FDD392006873ED /* PersistServiceSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistServiceSwift.swift; sourceTree = "<group>"; };
 		B7DE4845EF0F3FA0EB940DC3 /* libPods-GskUtilityDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GskUtilityDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +104,8 @@
 			children = (
 				6C14DA93207476CE0016BEBB /* UserPersistService.h */,
 				6C14DA94207476CE0016BEBB /* UserPersistService.m */,
+				6C3E5B0E2109BD9D0016FE13 /* NetworkingDemo.h */,
+				6C3E5B0F2109BD9D0016FE13 /* NetworkingDemo.m */,
 			);
 			path = Demo;
 			sourceTree = SOURCE_ROOT;
@@ -239,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C3E5B102109BD9D0016FE13 /* NetworkingDemo.m in Sources */,
 				6C14DAA8207476CE0016BEBB /* PersistService.m in Sources */,
 				6C3E5B0D2109AF9A0016FE13 /* NetworkManager.m in Sources */,
 				6C14DA6B20746F470016BEBB /* ViewController.m in Sources */,

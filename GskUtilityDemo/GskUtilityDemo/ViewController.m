@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UserPersistService.h"
+#import "NetworkingDemo.h"
 @interface ViewController ()
 
 @end
@@ -26,9 +27,26 @@
     [UserPersistService clearDatawithKey:@"me"];
     NSDictionary *newmeDic = [UserPersistService getUserDataWithKey:@"me"];
     GSKLog(@"me==%lu", (unsigned long)[newmeDic count]);
+    
+    //网络请求Demo
+    [NetworkingDemo getUserInfoWithParameters:@{@"token":@"abcdefg"} success:^(id response) {
+        NSString * str = [self jsonToString:response];
+        NSLog(@"数据==%@", str);
+    } failure:^(NSError *error) {
+        
+    }];
 }
-
-
+/**
+ *  json转字符串
+ */
+- (NSString *)jsonToString:(NSDictionary *)dic
+{
+    if(!dic){
+        return nil;
+    }
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:nil];
+    return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
