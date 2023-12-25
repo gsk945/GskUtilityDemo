@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A7D7001C81CFE3F89AAEE42 /* libPods-GskUtilityDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DE4845EF0F3FA0EB940DC3 /* libPods-GskUtilityDemo.a */; };
+		6C0D4EB52B395FE000A1DF97 /* TestFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D4EB42B395FE000A1DF97 /* TestFunc.m */; };
 		6C14DA6820746F470016BEBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C14DA6720746F470016BEBB /* AppDelegate.m */; };
 		6C14DA6B20746F470016BEBB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C14DA6A20746F470016BEBB /* ViewController.m */; };
 		6C14DA6E20746F470016BEBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C14DA6C20746F470016BEBB /* Main.storyboard */; };
@@ -23,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		51B569A13B307F991C107B39 /* Pods-GskUtilityDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GskUtilityDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GskUtilityDemo/Pods-GskUtilityDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6C0D4EB32B395FE000A1DF97 /* TestFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFunc.h; sourceTree = "<group>"; };
+		6C0D4EB42B395FE000A1DF97 /* TestFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFunc.m; sourceTree = "<group>"; };
 		6C14DA6320746F470016BEBB /* GskUtilityDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GskUtilityDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C14DA6620746F470016BEBB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6C14DA6720746F470016BEBB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -90,6 +93,8 @@
 				6C14DA6720746F470016BEBB /* AppDelegate.m */,
 				6C14DA6920746F470016BEBB /* ViewController.h */,
 				6C14DA6A20746F470016BEBB /* ViewController.m */,
+				6C0D4EB32B395FE000A1DF97 /* TestFunc.h */,
+				6C0D4EB42B395FE000A1DF97 /* TestFunc.m */,
 				6C14DA6C20746F470016BEBB /* Main.storyboard */,
 				6C14DA6F20746F470016BEBB /* Assets.xcassets */,
 				6C14DA7120746F470016BEBB /* LaunchScreen.storyboard */,
@@ -249,6 +254,7 @@
 				6C3E5B0D2109AF9A0016FE13 /* NetworkManager.m in Sources */,
 				6C14DA6B20746F470016BEBB /* ViewController.m in Sources */,
 				6CF9C5CD20FDD392006873ED /* PersistServiceSwift.swift in Sources */,
+				6C0D4EB52B395FE000A1DF97 /* TestFunc.m in Sources */,
 				6C14DAA7207476CE0016BEBB /* UserPersistService.m in Sources */,
 				6C14DA7620746F470016BEBB /* main.m in Sources */,
 				6C14DA6820746F470016BEBB /* AppDelegate.m in Sources */,

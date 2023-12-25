@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "UserPersistService.h"
 #import "NetworkingDemo.h"
+#import <objc/message.h>
 @interface ViewController ()
 
 @end
@@ -35,6 +36,31 @@
     } failure:^(NSError *error) {
         
     }];
+    
+    [self runtimeTest];
+}
+
+- (void)runtimeTest{
+    Class TestFunc = NSClassFromString(@"TestFunc");
+    SEL shareSel = NSSelectorFromString(@"shareManager");
+    SEL sel = NSSelectorFromString(@"printTest");
+    //判断是否含有+方法
+    if(TestFunc && [TestFunc respondsToSelector:shareSel]){
+        //调用+方法，持有单例对象
+        id shareFunc = ((Class (*)(id,SEL)) (void *) objc_msgSend)(TestFunc,shareSel);
+        if([shareFunc respondsToSelector:sel]){
+            //调用-方法
+            ((void (*)(id,SEL)) (void *) objc_msgSend)(shareFunc,sel);
+        }
+        //先声明应该 API 中含有的 block 实现
+        void (^testBlock)(NSString *) = ^(NSString *ref){
+            NSLog(@"%@",ref);
+        };
+        SEL sel2 = NSSelectorFromString(@"registListener:");
+        if([shareFunc respondsToSelector:sel2]){
+            ((void (*)(id,SEL,void (^)(NSString *))) (void *) objc_msgSend)(shareFunc,sel2,testBlock);
+        }
+    }
 }
 /**
  *  json转字符串
